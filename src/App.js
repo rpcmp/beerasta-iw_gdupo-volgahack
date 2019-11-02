@@ -1,6 +1,8 @@
 import React from 'react';
 import {HashRouter, Route} from "react-router-dom";
-import Login from './components/login/login';
+import Login from './components/account/login/index';
+import Register from './components/account/register/index';
+import User from './components/account/user/index';
 import Beer from './components/beer/index';
 
 function App() {
@@ -9,6 +11,8 @@ function App() {
       <div className="App">
         <Route exact path="/beer" component={Beer}/>
         <Route path="/login" component={Login}/>
+        <Route path="/register" component={Register}/>
+        <Route path="/user" component={User}></Route>
       </div>
     </HashRouter>
   );
