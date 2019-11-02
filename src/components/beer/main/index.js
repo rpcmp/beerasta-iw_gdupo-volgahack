@@ -1,7 +1,7 @@
 import React from 'react';
 import Item from './item';
 
-function Main() {
+function Items() {
     return (
         <div className="main">
             <Item
@@ -25,4 +25,4 @@ function Main() {
     );
 }
 
-export default Main;
+export default Items;

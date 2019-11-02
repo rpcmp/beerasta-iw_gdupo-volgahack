@@ -1,3 +1,6 @@
+$bottun-color: #00A3C0;
+$bottum-color-active: #FFD400;
+
 .main {
   display: flex;
   justify-content: flex-start;
@@ -11,6 +14,7 @@
 
     border: 1px solid black;
     border-radius: 5px;
+    background-color: white;
 
     .address {
       text-align: center;
@@ -42,6 +46,8 @@
     .time {
       display: flex;
 
+      margin-bottom: 25px;
+
       img {
         width: 25px;
         height: 25px;
@@ -52,29 +58,20 @@
       }
     }
 
-    .money {
-      height: 20px;
-      margin: 15px 0 20px 0;
-
-      text-align: center;
-      font-family: bold;
-      font-size: 16pt;
-    }
-
     .accept {
       display: block;
       margin: auto;
       width: 180px;
-      height: 50px;
+      height: 35px;
 
-      border: 0;
+      border: 1px solid black;
       border-radius: 5px;
 
-      background-color: yellow;
+      background-color: $bottun-color
     }
 
     .accept:hover {
-      background-color: lightblue;
+      background-color: $bottum-color-active
     }
   }
 }
