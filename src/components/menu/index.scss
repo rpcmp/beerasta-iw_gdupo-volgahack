@@ -1,0 +1,25 @@
+.menu {
+    text-align: left;
+
+    .img {
+      width: 50px;
+    }
+
+    .items {
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+
+      display: flex;
+      flex-direction: column;
+
+      .item {
+        width: 125px;
+
+        background-color: cadetblue;
+
+        text-align: center;
+        text-decoration: none;
+        color: black;
+      }
+    }
+}
