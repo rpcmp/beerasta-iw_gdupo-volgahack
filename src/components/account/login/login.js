@@ -58,12 +58,11 @@ class Login extends React.Component {
     }
 
     login() {
-        fetch("https://beerasta.herokuapp.com/login?username=" + this.state.login + "&password=" + this.state.password,
+        console.table(this.state)
+
+        fetch("https://beerasta.herokuapp.com/login?username=" + this.state.username + "&password=" + this.state.password,
             {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
+                method: 'POST'
             }).then(resp => {
                 if (resp.ok) {
                     this.props.history.push("/register");

@@ -46,12 +46,15 @@ class Register extends React.Component {
     }   
 
     register(){
-        fetch("https://beerasta.herokuapp.com/register", {
+        let body = {username: this.state.username, password: this.state.password}
+        console.table(body)
+
+        fetch("https://beerasta.herokuapp.com/registration", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({username: this.state.username, password: this.state.password})
+            body: JSON.stringify(body)
         }).then(resp => {
             if (resp.ok){
                 this.props.history.push("/login");
