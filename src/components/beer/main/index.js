@@ -5,7 +5,7 @@ function Items(props) {
     const [items, setItems] = useState([])
 
     useEffect(() => {
-        fetch("https://beerasta.herokuapp.com/item/list")
+        fetch(`https://beerasta.herokuapp.com/item/list?username=${localStorage.getItem("user")}`)
         .then(res => {
             if(res.ok){
                 return res.json()

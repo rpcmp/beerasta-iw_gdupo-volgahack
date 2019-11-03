@@ -2,18 +2,32 @@ import React from 'react';
 import './friends.scss';
 import Hello from './img/hello.png';
 import Friend from './friend';
+import Item from '../beer/main/item';
 
 class Friends extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            users: []
+            bookedItems: []
         }
 
         // this.state = {
         //     users: localStorage.getItem("users")
         // };
+    }
+
+    componentDidMount(){
+        fetch(`https://beerasta.herokuapp.com/user/booked?username=${localStorage.getItem("user")}`)
+        .then(res =>{
+            return res.json()
+        })
+        .then(com => {
+            console.log(com)
+            this.setState({
+                bookedItems: com
+            })
+        })
     }
 
     render() {
@@ -28,12 +42,16 @@ class Friends extends React.Component {
                     </div>
                 </div>
                 <div className="all-users">
-                    {this.state.users.map((number) => {
-                        return <Friend number/>
-                    })}
                     {/* <Friend username="Test"/> */}
 
                 </div>
+                <div className="items">
+        { 
+            this.state.bookedItems.map(val => {
+               return <Item key={val.id} {...val}/>
+            })
+        }
+        </div>
             </div>
         );
     }
