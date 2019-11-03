@@ -1,0 +1,15 @@
+.user {
+    width: 400px;
+    margin: 150px auto;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    background-color: white;
+
+    .userpic {
+        display: block;
+        width: 200px;
+        margin: auto;
+    }
+}

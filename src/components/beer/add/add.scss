@@ -27,14 +27,15 @@ $bottum-color-active: #ffd400;
             text-align: center;
 
             .input {
-                height: 20px;
-                padding: 5px 5px 5px 15px;
+                height: 40px;
                 border: 1px solid black;
                 border-radius: 5px;
+                padding: 0 5px 0 15px;
+                box-sizing: border-box;
             }
 
             .input-text {
-                width: 100px;
+                width: 150px;
             }
 
             .half-container {
@@ -47,9 +48,12 @@ $bottum-color-active: #ffd400;
             }
 
             .input-submit {
-                width: 100px;
-                box-sizing: content-box;
-
+                height: 40px;
+                width: 150px;
+                // box-sizing: content-box;
+                
+                border: 1px solid black;
+                border-radius: 5px;
                 background-color: $bottun-color;
             }
 
