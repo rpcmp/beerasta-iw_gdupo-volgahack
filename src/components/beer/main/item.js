@@ -21,7 +21,6 @@ class Item extends React.Component {
                 <button className="accept">
                     Пирую
                 </button>
-
             </div>
         )
     }
