@@ -1,5 +1,6 @@
 import React from 'react';
 import './login.scss';
+import {NavLink} from "react-router-dom"
 
 class Login extends React.Component {
     constructor(props) {
@@ -34,7 +35,7 @@ class Login extends React.Component {
                     </div>
                     <div className="item btn-container">
                         <button className="btn btn-login" onClick={this.login}>Войти</button>
-                        <button className="btn btn-register">Регистрация</button>
+                        <NavLink to="/register" className="btn btn-register">Регистрация</NavLink>
                     </div>
                 </div>
             </div>
