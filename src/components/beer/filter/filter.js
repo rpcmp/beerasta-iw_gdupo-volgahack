@@ -5,7 +5,7 @@ function Filter() {
     return (
         <div className="filter">
             <div className="item">
-                <h2 className="title">Ищем пирушку</h2>
+                <h2 className="title">Искать пирушку</h2>
             </div>
             <div className="item">
                 <p>Адрес</p>
