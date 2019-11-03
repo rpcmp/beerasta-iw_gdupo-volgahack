@@ -7,18 +7,20 @@ import User from './components/account/user/user';
 import Beer from './components/beer/beer';
 import Friend from './components/friend/friend';
 import Doctrine from './components/doctrine/doctrine';
+import Main from './components/main/main';
 
 function App() {
   return (
     <HashRouter>
       <div className="App">
         <Header/>
-        <Route exact path="/beer" component={Beer}/>
+        <Route exact path='/' component={Main}/>
+        <Route path="/beer" component={Beer}/>
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
-        <Route path="/user" component={User}></Route>
-        <Route path="/friend" component={Friend}></Route>
-        <Route path="/evangelie" component={Doctrine}></Route>
+        <Route path="/user" component={User}/>
+        <Route path="/friend" component={Friend}/>
+        <Route path="/evangelie" component={Doctrine}/>
       </div>
       
     </HashRouter>
