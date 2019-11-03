@@ -12,7 +12,7 @@ function Header() {
                 <NavLink to="/beer" className="item">Пиры</NavLink>
                 <NavLink to="/friends" className="item">Друзья</NavLink>
                 <NavLink to="/evangelie" className="item">Писание</NavLink>
-                <NavLink to="/login" className="item">Логин</NavLink>
+                <NavLink to="/login" className="item">Профиль</NavLink>
             </div>
         </div>
     );

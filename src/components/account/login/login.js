@@ -19,6 +19,12 @@ class Login extends React.Component {
         this.showError = this.showError.bind(this);
     }
 
+    componentDidMount(){
+        if (localStorage.getItem("user") != undefined){
+            this.props.history.push("/user");
+        }
+    }
+
     render() {
         return (
             <div className="login">
@@ -63,6 +69,7 @@ class Login extends React.Component {
                 method: 'POST'
             }).then(resp => {
                 if (resp.ok) {
+                    localStorage.setItem("user", this.state.username);
                     this.props.history.push("/user");
                 } else {
                     this.showError(resp.statusText);
