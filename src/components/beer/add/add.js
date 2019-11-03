@@ -83,7 +83,7 @@ class Add extends React.Component {
                         <input type="time" className="input" onInput={e => this.setTime(e.target.value)}></input>
                     </div>
                     <div className="item">
-                        <button className="input-submit" onClick={this.sendItem()}>Пируем</button>
+                        <button className="input-submit" onClick={this.sendItem}>Пируем</button>
                     </div>
                 </div>
             </div>
