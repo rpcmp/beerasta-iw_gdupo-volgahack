@@ -29,15 +29,16 @@ $bottum-color-active: #ffd400;
     }
 
     .input {
+      height: 40px;
       margin: 15px;
+      padding: 0 5px 0 15px;
       border: 1px solid black;
+      box-sizing: border-box;
       border-radius: 5px;
     }
 
     .input-text {
-      width: 135px;
-      height: 15px;
-      padding: 5px 5px 5px 10px;
+      width: 180px;
     }
 
     .half-container {
@@ -48,22 +49,17 @@ $bottum-color-active: #ffd400;
       justify-content: space-around;
 
       .input-half {
-        width: 50px;
-        padding: 5px 5px 5px 10px;
+        width: 75px;
       }
     }
 
-    .input-time {
-      height: 20px;
-      padding: 5px;
-    }
-
     .submit {
-      width: 125px;
-      height: 20px;
-      padding: 5px;
-      box-sizing: content-box;
-  
+      width: 180px;
+      height: 40px;
+      margin: 15px;      
+      border: 1px solid black;
+      border-radius: 5px;
+      
       background-color: $bottun-color;
     }
   

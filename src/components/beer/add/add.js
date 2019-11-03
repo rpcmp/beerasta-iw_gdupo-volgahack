@@ -33,7 +33,7 @@ class Add extends React.Component {
                         <input type="time" className="input"></input>
                     </div>
                     <div className="item">
-                        <button className="input input-submit">Пируем</button>
+                        <button className="input-submit">Пируем</button>
                     </div>
                 </div>
             </div>

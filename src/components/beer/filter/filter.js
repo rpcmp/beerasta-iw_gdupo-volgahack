@@ -14,8 +14,8 @@ function Filter() {
             <div className="item">
                 <p>Количество людей</p>
                 <div className="half-container">
-                    <input className="input input-half"></input>
-                    <input className="input input-half"></input>
+                    <input className="input input-half" placeholder="Min"></input>
+                    <input className="input input-half" placeholder="Max"></input>
                 </div>
             </div>
             <div className="item">
@@ -23,7 +23,7 @@ function Filter() {
                 <input type="time" className="input input-time"></input>
             </div>
             <div className="item">
-                <button className="input submit">Найти</button>
+                <button className="submit">Найти</button>
             </div>
         </div>
     );
