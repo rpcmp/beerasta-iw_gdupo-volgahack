@@ -27,7 +27,7 @@ function Items(props) {
         <div className="items">
         {
             items.map((val, num) => {
-                return <Item key={num} {...val}/>
+                return <Item key={val.id} {...val}/>
             })
         }
             {/* <Item
