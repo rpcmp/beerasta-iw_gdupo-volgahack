@@ -1,3 +1,6 @@
+$bottun-color: #00a3c0;
+$bottum-color-active: #ffd400;
+
 .add {
     width: 1000px;
 
@@ -5,6 +8,7 @@
     border-radius: 5px;
 
     background-color: white;
+    font-family: 'Roboto', sans-serif;
 
     .title {
         margin: 20px 0 5px 0;
@@ -45,6 +49,12 @@
             .input-submit {
                 width: 100px;
                 box-sizing: content-box;
+
+                background-color: $bottun-color;
+            }
+
+            .input-submit:hover {
+                background-color: $bottum-color-active;
             }
         }
     }

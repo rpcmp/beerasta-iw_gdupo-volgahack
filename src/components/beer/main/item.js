@@ -1,5 +1,5 @@
 import React from 'react';
-import Alco from './img/alco.png';
+// import Alco from './img/alco.png';
 import './item.scss';
 
 class Item extends React.Component {

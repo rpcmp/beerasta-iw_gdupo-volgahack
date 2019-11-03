@@ -3,7 +3,7 @@ import Item from './item';
 
 function Items() {
     return (
-        <div className="main">
+        <div className="items">
             <Item
                 key="0"
                 address="Тестовый адрес"

@@ -2,6 +2,7 @@ import React from 'react';
 import './beer.scss';
 import Filter from './filter/filter'
 import Add from './add/add';
+import Items from './main/index';
 
 
 function Beer(){
@@ -10,6 +11,7 @@ function Beer(){
             <Filter/>
             <div className="main">
                 <Add/>
+                <Items/>
             </div>
         </div>
     );
