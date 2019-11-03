@@ -15,20 +15,22 @@
 
     .nav {
         height: 100%;
-        width: 750px;
+        width: 500px;
         margin: auto;
 
         display: flex;
 
         .item {
-            display: block;
             height: 100%;
-            width: 150px;
+            width: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             text-align: center;
             color: black;
             text-decoration: none;
-
         }
 
         .item:hover {

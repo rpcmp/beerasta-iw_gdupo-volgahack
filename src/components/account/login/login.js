@@ -58,7 +58,7 @@ class Login extends React.Component {
     }
 
     login() {
-        fetch("https://beerasta.herokuapp.com/login?username=" + this.state.login + "&password=" + this.state.password,
+        fetch("https://beerasta.herokuapp.com/login?username=" + this.state.username + "&password=" + this.state.password,
             {
                 method: 'POST',
                 headers: {
@@ -66,7 +66,7 @@ class Login extends React.Component {
                 }
             }).then(resp => {
                 if (resp.ok) {
-                    this.props.history.push("/register");
+                    this.props.history.push("/user");
                 } else {
                     this.showError(resp.statusText);
                 }

@@ -8,11 +8,11 @@ function Header() {
         <div className="header">
             <img className="img" src={Logo} alt="logo"></img>
             <div className="nav">
-                <NavLink exact to="/" className="item"><p>Главная</p></NavLink>
-                <NavLink to="/beer" className="item"><p>Пирушки</p></NavLink>
-                <NavLink to="/friends" className="item"><p>Друзяшки</p></NavLink>
-                <NavLink to="/evangelie" className="item"><p>Писание</p></NavLink>
-                <NavLink to="/login" className="item"><p>Логин</p></NavLink>
+                <NavLink exact to="/" className="item">Главная</NavLink>
+                <NavLink to="/beer" className="item">Пиры</NavLink>
+                <NavLink to="/friends" className="item">Друзья</NavLink>
+                <NavLink to="/evangelie" className="item">Писание</NavLink>
+                <NavLink to="/login" className="item">Логин</NavLink>
             </div>
         </div>
     );
