@@ -43,15 +43,15 @@ class Add extends React.Component {
         let body = JSON.stringify(this.state)
         console.table(this.state)
 
-        fetch("https://beerasta.herokuapp.com/user/personal", {
-            method: 'PUT',
+        fetch("https://beerasta.herokuapp.com/user/personal?username=" + localStorage.getItem("user"), {
+            method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(body)
+            body: body
         }).then(res => {
             if (res.ok){
-                console.log("vse zaebis")
+                document.location.reload(true)
             }
         })
     }
