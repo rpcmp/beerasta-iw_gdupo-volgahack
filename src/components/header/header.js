@@ -11,6 +11,7 @@ function Header() {
                 <NavLink exact to="/" className="item">Главная</NavLink>
                 <NavLink to="/beer" className="item">Пиры</NavLink>
                 <NavLink to="/friends" className="item">Друзья</NavLink>
+                <NavLink to="/messages" className="item">Сообщения</NavLink>
                 <NavLink to="/evangelie" className="item">Писание</NavLink>
                 <NavLink to="/login" className="item">Профиль</NavLink>
             </div>

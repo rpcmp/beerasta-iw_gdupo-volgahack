@@ -5,9 +5,10 @@ import Login from './components/account/login/login';
 import Register from './components/account/register/register';
 import User from './components/account/user/user';
 import Beer from './components/beer/beer';
-import Friend from './components/friend/friend';
+import Friends from './components/friend/friends';
 import Doctrine from './components/doctrine/doctrine';
 import Main from './components/main/main';
+import Messages from './components/messages/messages';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
         <Route path="/user" component={User}/>
-        <Route path="/friend" component={Friend}/>
+        <Route path="/friends" component={Friends}/>
         <Route path="/evangelie" component={Doctrine}/>
+        <Route path="/messages" component={Messages}/>
       </div>
       
     </HashRouter>

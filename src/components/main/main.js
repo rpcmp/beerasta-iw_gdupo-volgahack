@@ -7,7 +7,7 @@ function Main(){
         <div className="main-page">
             <div className="text-container">
                 <img className="hello-img" src={Hello} alt="hello-img"></img>
-                <p className="text">Приветствую тебя на нашем сайте, располагайся поудобнее и изучи доступные разделы</p>
+                <p className="text">Приветствую тебя на нашем сайте!<br/>Располагайся поудобнее и изучи доступные разделы.</p>
             </div>
         </div>
     );

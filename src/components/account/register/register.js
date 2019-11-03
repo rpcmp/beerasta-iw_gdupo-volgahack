@@ -37,17 +37,16 @@ class Register extends React.Component {
         );
     }
 
-    setUsername(name){
-        this.setState({username: name});
+    setUsername(name) {
+        this.setState({ username: name });
     }
 
-    setPassword(pass){
-        this.setState({password: pass});
-    }   
+    setPassword(pass) {
+        this.setState({ password: pass });
+    }
 
-    register(){
-        let body = {username: this.state.username, password: this.state.password}
-        console.table(body)
+    register() {
+        let body = { username: this.state.username, password: this.state.password }
 
         fetch("https://beerasta.herokuapp.com/registration", {
             method: "POST",
@@ -56,7 +55,7 @@ class Register extends React.Component {
             },
             body: JSON.stringify(body)
         }).then(resp => {
-            if (resp.ok){
+            if (resp.ok) {
                 this.props.history.push("/login");
             }
         });

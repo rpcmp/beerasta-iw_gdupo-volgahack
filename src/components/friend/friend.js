@@ -1,15 +1,18 @@
 import React from 'react';
-import './friend.scss';
+import './friends.scss';
+import Userpic from './img/userpic.png';
 
 class Friend extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
     }
 
-    render(){
+    render() {
         return (
             <div className="friend">
-
+                <h3 className="name">{this.props.username}</h3>
+                <img className="userpic" src={Userpic} alt="userpic"></img>
+                <button className="btn">Написать</button>
             </div>
         );
     }
