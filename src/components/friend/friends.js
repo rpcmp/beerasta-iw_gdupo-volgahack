@@ -17,17 +17,21 @@ class Friends extends React.Component {
         // };
     }
 
-    componentDidMount(){
-        fetch(`https://beerasta.herokuapp.com/user/booked?username=${localStorage.getItem("user")}`)
-        .then(res =>{
-            return res.json()
-        })
-        .then(com => {
-            console.log(com)
-            this.setState({
-                bookedItems: com
-            })
-        })
+    componentDidMount() {
+        if (localStorage.getItem("user") == null) {
+           this.props.history.push("/login");
+        } else {
+            fetch(`https://beerasta.herokuapp.com/user/booked?username=${localStorage.getItem("user")}`)
+                .then(res => {
+                    return res.json()
+                })
+                .then(com => {
+                    console.log(com)
+                    this.setState({
+                        bookedItems: com
+                    })
+                })
+        }
     }
 
     render() {
@@ -37,7 +41,7 @@ class Friends extends React.Component {
                     <img className="userpic" src={Hello} alt="userpic"></img>
                     <div className="info">
                         <h4 className="name">
-                            Приветствую тебя, {localStorage.getItem("user")}.<br/>Здесь ты можешь найти себе новых друзей.
+                            Приветствую тебя, {localStorage.getItem("user")}.<br />Здесь ты можешь найти себе новых друзей.
                         </h4>
                     </div>
                 </div>
@@ -46,12 +50,12 @@ class Friends extends React.Component {
 
                 </div>
                 <div className="items">
-        { 
-            this.state.bookedItems.map(val => {
-               return <Item key={val.id} {...val}/>
-            })
-        }
-        </div>
+                    {
+                        this.state.bookedItems.map(val => {
+                            return <Item key={val.id} {...val} />
+                        })
+                    }
+                </div>
             </div>
         );
     }
