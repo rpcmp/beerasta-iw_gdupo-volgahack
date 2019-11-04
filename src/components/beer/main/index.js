@@ -16,13 +16,6 @@ function Items(props) {
 
     }, []);
 
-    // useEffect(() => {
-    //     effect
-    //     return () => {
-    //         cleanup
-    //     };
-    // }, [input]);
-
     return (
         <div className="items">
         {
@@ -30,23 +23,6 @@ function Items(props) {
                 return <Item key={val.id} {...val}/>
             })
         }
-            {/* <Item
-                key="0"
-                address="Тестовый адрес"
-                people="5..15"
-                time="17:00"
-                alco=""
-                money="бесплатно"
-            />
-
-            <Item
-                key="0"
-                address="Тестовый адрес dsadasdasdsadsa"
-                people="5..15"
-                time="17:00"
-                alco=""
-                money="20 руб"
-            /> */}
         </div>
     );
 }
