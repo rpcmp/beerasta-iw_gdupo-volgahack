@@ -1,3 +1,7 @@
+Развернутый проект: https://beerasta.herokuapp.com/#/
+
+Баги есть, поиск в писаниях не работает, сообщения тоже 
+
 Install node.js https://nodejs.org/en/
 
 @
