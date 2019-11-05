@@ -18,4 +18,4 @@ clone repository
 
 @
 
-PROTIFT
+PROFIT
