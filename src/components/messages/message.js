@@ -1,5 +1,5 @@
 import React from 'react';
-import 'messages.scss';
+import './messages.scss';
 
 // props.username
 class Message extends React.Component {
